@@ -1,38 +1,107 @@
-<!-- TODO 1: Create the HTML Boilerplate -->
-
-<!-- TODO 2: Add Your previous projects' HTML into the public folder -->
-
-<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
-
-<!-- TODO 4: Add titles/subtitles etc. -->
-
-<!-- TODO 5: Add a link to the project pages -->
-
-<!-- TODO 6: Add images to show the project previews
-HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
-
-<!-- TODO 7: Add the Contact Me and About Me page links -->
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>George Aung's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="style.css">
+
+<title>My Portfolio</title>
 </head>
 <body>
-    <h1>George Aung's Portfolio</h1>
-    <h2>I'm a Web Developer</h2>
-<hr />
-    <a href="/2.4 Movie Ranking Project/index.html"><h2>Movie Ranking Project</h2></a>
-    <img src="/2.4 Movie Ranking Project/goal.png" height="200" alt="movie-ranking">
-    <a href="/3.4 Birthday Invite Project/index.html"><h1>Birthday Invite Project</h1></a>
-    <img src="/3.4 Birthday Invite Project/goal.png" height="200" alt="">
-    <hr/>
-    <a href="./public/about.html">About Me</a>
-    <a href="./public/contact.html">Contact Me</a>
+    <!--Nav Bar-->
+    <nav>
+        <div class="left">
+            <a href="/">George Aung</a>
+        </div>
+        <div class="right">
+            <a href="http://github.com" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i>
+                <span>Github</span>
+            </a>
+            <a href="http://github.com" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin"></i>
+                <span>Linkedin</span>
+            </a>
+            <a href="mailto:yehtetaung.jack@gmail.com" >
+                <i class="fa-regular fa-envelope"></i>
+                <span>Email</span>
+            </a>
+        </div>
+
+    </nav>
+
+    <main>
+        <!--Section 1: Hero-->
+        <section class="hero-section">
+            <div class="text">
+                <h2>Hi, I'm George👋</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse delectus ratione adipisci cumque facere, nihil et sunt excepturi 
+                harum earum quisquam sint commodi iure? Quisquam nobis laudantium incidunt dolores minus reprehenderit cum officia! Sit atque quod quis,
+                nobis esse rerum quidem! Nulla ad a modi facere placeat dicta quisquam ullam?</p>
+                <div class="links">
+                    <a href="#skills">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Skills</span>
+                    </a>
+                    <a href="#testimony">
+                        <i class="fa-solid fa-pen"></i>
+                        <span>Testimony</span>
+                    </a>
+                    <a href="#contact">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="headshot">
+                <img src="images/hero-headshot.webp.jpg" alt="George headshot">
+            </div>
+            
+
+        </section>
+
+         <!--Section 2: Skills-->
+        <section id="skills" class="skills-section">
+            <h2>Skills</h2>
+            <div class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore minus, ullam et enim 
+                inventore voluptatum? Quod, exercitationem aliquid! Alias omnis eius repudiandae vitae. Numquam odio consequatur expedita rerum saepe quam accusantium, deserunt doloribus 
+                nisi aut excepturi eos ex cum necessitatibus provident sunt aspernatur alias! Doloremque laudantium non blanditiis eos cupiditate?
+            
+                <div class="cells">
+                    <div class="cell">
+                        <img src="images/html-logo.webp" alt="html logo">
+                        <span>HTML</span>
+                    </div>
+
+                    <div class="cell">
+                        <img src="images/css-logo.webp" alt="css logo">
+                        <span>CSS</span>
+                    </div>
+
+                     <div class="cell">
+                        <img src="images/java-logo.webp" alt="java logo">
+                        <span>Java</span>
+                    </div>
+
+                     <div class="cell">
+                        <img src="images/react-logo.webp" alt="react logo">
+                        <span>React.js</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Section 3: Testimony-->
+        <section id="testimony"></section>
+
+        <!--Section 4: Contacts-->
+        <section id="contacts"></section>
+    </main>
 </body>
 </html>
